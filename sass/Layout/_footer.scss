@@ -1,0 +1,117 @@
+// CSS FOOTER
+footer {
+    background-color: $color-black-4;
+    padding: 40px 0;
+    .row.footer__content {
+        justify-content: center;
+    }
+    .footer__copyright {
+        font-size: 14px;
+        span {
+            color: $color-green-0;
+        }
+    }
+    .footer__info {
+        display: flex;
+        justify-content: center;
+        p {
+            font-size: 14px;
+            padding: 0px 18px;
+            border-right: 1px solid $color-black-6;
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+    .footer__social {
+        text-align: right;
+        a {
+            padding: 0 10px;
+            .fa-twitter {
+                color: #16a7b9;
+            }
+            .fa-facebook-f {
+                color: #315bd6;
+            }
+            .fa-linkedin-in {
+                color: #315bd6;
+            }
+            .fa-google-plus-g {
+                color: #f44336;
+            }
+            .fa-instagram {
+                color: #786f4c;
+            }
+            .fa-youtube {
+                color: #ae0e0e;
+            }
+            .fa-pinterest-p {
+                color: #ff5757;
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+@media only screen and (max-width:576px) {
+    footer {
+        padding: 20px;
+        .row.footer__content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .footer__social {
+            margin-top: 10px;
+            a {
+                padding: 0px 8px;
+            }
+        }
+        .footer__info {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:740px) {
+    footer {
+        padding: 30px;
+        .row.footer__content {
+            justify-content: space-between;
+        }
+        .footer__info {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:740px) and (max-width: 1023px) {
+    footer {
+        padding: 30px;
+        .footer__social {
+            margin-top: 20px;
+        }
+        .footer__info {
+            p {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1023px) and (max-width: 1239px) {
+    footer {
+        padding: 30px;
+        .footer__social {
+            a {
+                padding: 0 6px;
+            }
+        }
+        .footer__info {
+            p {
+                padding: 0 10px;
+                display: inline;
+            }
+        }
+    }
+}

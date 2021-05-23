@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $fs-1;
+}
+
+body {
+    // line-height: $line-height-0;
+    color: $color-gray-0;
+    background-color: $color-white-0;
+    font-family: $fm-0;
+    scroll-behavior: smooth;
+}

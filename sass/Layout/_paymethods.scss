@@ -1,0 +1,125 @@
+// CSS PAY METHODS
+.grid.wide.paymethods {
+    border-top: 1px solid $color-gray-6;
+    padding: 75px 15px;
+}
+
+.paymethods__item {
+    width: 47%;
+    padding: 60px;
+    padding-bottom: 10px;
+    border: 1px solid $color-gray-6;
+    border-radius: 70px;
+    border-top-left-radius: 0;
+}
+
+.paymethods__accept {
+    font-family: $fm-1;
+    color: $color-black-1;
+    font-size: 24px;
+}
+
+.paymethods__left {
+    .paymethods__description {
+        padding: 35px 0;
+        font-size: 16px;
+    }
+    .card__item {
+        width: 50px;
+        height: 31px;
+        background-color: $color-gray-6;
+        margin: 0px 23px 23px 0;
+    }
+    .paymethods__detail {
+        padding-right: 35px;
+    }
+}
+
+.paymethods__right {
+    margin-left: auto;
+    .paymethods__shipping {
+        padding: 30px;
+        padding-left: 0;
+        .paymethods__check {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            p {
+                color: $color-gray-9;
+                font-size: 16px;
+            }
+            i {
+                color: $color-green-0;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.paymethods__accept-card {
+    text-align: right;
+    i {
+        font-size: 32px;
+        color: $color-black-1;
+    }
+}
+
+// RESPONSIVE
+@media only screen and (max-width:576px) {
+    .grid.wide.paymethods {
+        padding: 45px 15px;
+        .paymethods__item {
+            width: 100%;
+            padding: 23px;
+            margin: 10px 0;
+        }
+        .paymethods__accept {
+            font-size: 18px;
+        }
+        .paymethods__description {
+            padding: 15px 0;
+        }
+        .paymethods__accept-card {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:740px) {
+    .grid.wide.paymethods {
+        padding: 45px 15px;
+        .paymethods__item {
+            width: 100%;
+            padding: 20px 40px;
+            margin: 10px 0;
+        }
+        .paymethods__accept {
+            font-size: 18px;
+        }
+        .paymethods__description {
+            padding: 15px 0;
+        }
+        .paymethods__accept-card {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:740px) and (max-width: 1023px) {
+    .grid.wide.paymethods {
+        padding: 45px 15px;
+        .paymethods__item {
+            width: 100%;
+            padding: 20px 40px;
+            margin: 10px 0;
+        }
+        .paymethods__accept {
+            font-size: 18px;
+        }
+        .paymethods__description {
+            padding: 15px 0;
+        }
+    }
+}
+
+@media screen and (min-width:1023px) and (max-width: 1239px) {}

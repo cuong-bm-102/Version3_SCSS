@@ -1,0 +1,96 @@
+// CSS LATESNEWS
+.latestnews {
+    .news__title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        color: $color-black-1;
+        margin-bottom: 50px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .latestnews__content {
+        padding: 80px 0;
+        border-bottom: 1px solid $color-gray-6;
+        margin-bottom: 3px;
+        .latesnews__item {
+            .latesnews__imgae {
+                height: 188px;
+                background-color: $color-gray-6;
+            }
+            .latesnews__info {
+                padding: 18px 20px;
+                background-color: $color-white-2;
+                .latesnews__admin {
+                    .admin__left {
+                        color: $color-gray-3;
+                        font-size: 14px;
+                        span {
+                            color: $color-green-0;
+                        }
+                    }
+                    .admin__right {
+                        i {
+                            margin-right: 8px;
+                        }
+                        span.count__comment {
+                            padding-right: 10px;
+                            border-right: 2px solid $color-white-3;
+                        }
+                        i.fa-heart {
+                            color: $color-red;
+                        }
+                    }
+                }
+            }
+            .latesnews__title {
+                padding-top: 40px;
+                padding-bottom: 20px;
+                font-size: 24px;
+                letter-spacing: 2.5px;
+                line-height: 35px;
+                color: $color-black-1;
+            }
+            .latesnews__description {
+                padding: 20px 0;
+            }
+            .latesnews__readmore {
+                padding-top: 20px;
+                i.latesnews__share {
+                    padding: 7px;
+                    text-align: center;
+                    background-color: $color-gray-8;
+                    margin-right: 15px;
+                    color: $color-white-0;
+                    border-radius: 3px;
+                }
+                .btn__readmore {
+                    @include styleButton(7px, 14px, 14px, bold, $color-green-0, transparent, 3px, $color-green-0, 3px);
+                    &:hover {
+                        @include styleButtonHover($color-white-0, $color-green-0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+@media only screen and (max-width:1024px) {
+    .latesnews__item {
+        margin-bottom: 12px;
+    }
+    .news__title {
+        margin-bottom: 0 !important;
+    }
+    .latestnews__content {
+        padding: 35px 0 !important;
+    }
+}
+
+@media screen and (min-width:1023px) and (max-width: 1239px) {
+    .count__comment {
+        padding-right: 0 !important;
+    }
+}
+
+@media screen and (min-width:1023px) and (max-width: 1239px) {}

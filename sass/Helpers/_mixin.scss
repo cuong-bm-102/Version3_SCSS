@@ -1,0 +1,60 @@
+@mixin styleFormSearch($pdTopBot, $pdRightLeft, $fsSearch, $fsIcon, $colorIcon, $colorBorder, $colorBg, $borderRadius, $colorFont) {
+    input {
+        padding: $pdTopBot $pdRightLeft;
+        width: 100%;
+        font-size: $fsSearch;
+        color: $colorFont;
+        background-color: $colorBg;
+        border: 1px solid $colorBorder;
+        border-radius: $borderRadius;
+    }
+    .search__icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(-50%, -50%);
+        font-size: $fsIcon;
+        i {
+            color: $colorIcon;
+        }
+    }
+}
+
+@mixin styleButton($pdTB, $pdRL, $fs, $fw, $color, $colorBg, $Border, $colorBorder, $borderRadius) {
+    padding: $pdTB $pdRL;
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+    background-color: $colorBg;
+    border: $Border solid $colorBorder;
+    border-radius: $borderRadius;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+@mixin styleButtonHover($color, $colorBG) {
+    color: $color;
+    background-color: $colorBG;
+}
+
+@mixin styleSale($size, $colorBg, $color, $fs, $fw) {
+    width: $size;
+    height: $size;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $colorBg;
+    align-items: center;
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+    letter-spacing: 1.5px;
+}
+
+@mixin styleSalePosition($top, $right, $zIndex, $translateX, $translateY) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    transform: translate($translateX, $translateY);
+    z-index: $zIndex;
+}

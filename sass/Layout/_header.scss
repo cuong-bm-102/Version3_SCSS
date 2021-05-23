@@ -1,0 +1,105 @@
+/* CSS HEADER NAVBAR */
+
+.grid__header {
+    border-top: 4px solid $color-green-0;
+    border-bottom: 1px solid $color-gray-6;
+    background-color: $color-gray-7;
+    color: $color-gray-2;
+    text-align: center;
+    header {
+        justify-content: space-between;
+        color: $color-gray-1;
+        align-items: center;
+        .header__phone {
+            i {
+                margin-right: $mg-3;
+            }
+            span {
+                font-size: $fs-0;
+            }
+        }
+        .header__social {
+            padding: $pd-1 $pd-7;
+            border-left: 1px solid $color-gray-6;
+            border-right: 1px solid $color-gray-6;
+            color: $color-gray-1;
+            i {
+                margin: 0 $mg-0;
+                color: $color-gray-2;
+            }
+            i.fa-youtube {
+                color: $color-red;
+            }
+        }
+        .header__step {
+            span {
+                font-size: $fs-0;
+                margin-right: $mg-5;
+                font-weight: $fw-1;
+                i {
+                    font-size: $fs-0 - 1;
+                    margin-right: $mg-2;
+                }
+            }
+        }
+        .header__wishlist {
+            .btnwishlist {
+                @include styleButton (10px, 18px, $fs-0, 500, $color-white-2, $color-gray-8, 0px, $color-gray-8, $border-darius-0);
+                &:hover {
+                    @include styleButtonHover($color-white-2, $color-green-0)
+                }
+            }
+        }
+    }
+}
+
+
+/* RESPONSIVE HEADER NAVBAR */
+
+@media screen and (max-width:740px) {
+    header {
+        padding: 0 15px;
+    }
+    .grid__header {
+        padding: 5px 0;
+    }
+    .header__social {
+        display: none;
+    }
+    .header__step {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header__step {
+        display: none;
+    }
+    header {
+        padding: 0 15px;
+    }
+    .btnwishlist {
+        background-color: #00bcd4 !important;
+    }
+}
+
+@media screen and (max-width: 1239px) {
+    .grid__header {
+        header {
+            .header__social {
+                padding: 10px 25px;
+                i {
+                    margin: 0 5px;
+                }
+            }
+            .header__step {
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 740px) and (max-width: 1023px) {}
+// @media screen and (min-width: 1024px) and (max-width: 1239px) {}

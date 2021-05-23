@@ -1,0 +1,74 @@
+// CSS ADVERT
+.advert {
+    background-color: $color-white-2;
+    padding: 100px 0;
+    padding-top: 70px;
+    .advert__content {
+        .advert__item {
+            .advert__item--detail {
+                display: flex;
+                flex-direction: column;
+                .advert__element {
+                    display: flex;
+                    &:nth-child(2) {
+                        margin: 12px 0;
+                    }
+                    .advert__logo {
+                        width: 80px;
+                        background-color: $color-gray-3;
+                        position: relative;
+                    }
+                    .advert__detail {
+                        padding: 17px;
+                        min-height: 100%;
+                        flex: 1;
+                        background-color: $color-white-0;
+                        p {
+                            color: #5f727f;
+                            margin-bottom: 5px;
+                        }
+                        span {
+                            font-size: 20px;
+                            color: $color-black-1;
+                        }
+                    }
+                    .advert__star {
+                        margin-top: auto;
+                        text-align: right;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+@media only screen and (max-width:576px) {
+    .advert {
+        padding: 20px 0;
+        .title__common--black {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:740px) {
+    .advert {
+        padding: 50px 0;
+        .title__common--black {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width:740px) and (max-width: 1023px) {
+    .advert {
+        padding: 50px 0;
+        .title__common--black {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width:1023px) and (max-width: 1239px) {}

@@ -1,0 +1,65 @@
+// CSS OUR BRANDS
+.ourbrands {
+    padding: 70px 0;
+    background-image: url(../image/our__brands.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 120px 0;
+    .ourbrands__content {
+        text-align: center;
+        p.ourbrands__title {
+            font-family: $fm-1;
+            font-size: 24px;
+            color: $color-black-1;
+            margin-bottom: 80px;
+            letter-spacing: 1.5px;
+        }
+        .ourbrands__logo {
+            padding: 0 50px;
+            .item {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: $color-gray-6;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// RESPONSIVE BANNER
+@media only screen and (max-width:576px) {
+    .ourbrands {
+        padding: 30px 0;
+        margin: 20px 0;
+        .ourbrands__content {
+            p.ourbrands__title {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:740px) {
+    .ourbrands {
+        padding: 40px 0;
+        margin: 50px 0;
+        .ourbrands__content {
+            p.ourbrands__title {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:740px) and (max-width: 1023px) {
+    .ourbrands {
+        padding: 50px 0;
+        margin: 60px 0;
+        .ourbrands__content {
+            p.ourbrands__title {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

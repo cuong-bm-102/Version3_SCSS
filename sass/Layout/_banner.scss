@@ -1,0 +1,181 @@
+/* CSS BANNER */
+
+.banner {
+    position: relative;
+    background-color: #b7d6e6;
+    background-image: url(../image/bg_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(92, 97, 100, 0.596);
+    background-blend-mode: overlay;
+    color: $color-white-0;
+    padding: 80px 0;
+}
+
+.banner__content {
+    margin: 0 auto;
+    text-align: right;
+}
+
+.banner__title {
+    margin-bottom: 45px;
+    letter-spacing: 10px;
+    font-family: 'Montserrat', sans-serif;
+    span {
+        font-size: 100px;
+        &:first-child {
+            font-weight: 700;
+            margin-right: 20px;
+        }
+    }
+}
+
+.banner__description {
+    font-size: 24px;
+    font-weight: lighter;
+    p {
+        margin: 10px 0;
+    }
+}
+
+.arrow__left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    .btn__left {
+        width: 80px;
+        height: 80px;
+        border: none;
+        background-color: $color-black-2;
+        color: $color-white-0;
+        i {
+            font-size: 48px;
+        }
+    }
+}
+
+.arrow__right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    .btn__right {
+        width: 80px;
+        height: 80px;
+        border: none;
+        background-color: $color-black-2;
+        color: $color-white-0;
+        i {
+            font-size: 48px;
+        }
+    }
+}
+
+.banner__step {
+    position: absolute;
+    bottom: 20px;
+    i {
+        margin: 0 10px;
+    }
+    span {
+        &:first-child {
+            color: $color-green-0;
+        }
+        &:last-child {
+            padding-bottom: 15px;
+            border-bottom: 5px solid red;
+        }
+    }
+}
+
+// RESPONSIVE BANNER
+@media only screen and (max-width:576px) {
+    .banner {
+        padding: 12px 25px;
+        padding-right: 45px;
+    }
+    .banner__title {
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        span {
+            font-size: 35px;
+            &:first-child {
+                font-weight: 600;
+                margin-right: 8px;
+            }
+        }
+    }
+    .arrow__left,
+    .arrow__right {
+        display: none;
+    }
+    .banner__step {
+        display: none;
+    }
+    .banner__description {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:740px) {
+    .banner {
+        padding: 15px 35px;
+        padding-right: 60px;
+    }
+    .banner__title {
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        span {
+            font-size: 45px;
+            &:first-child {
+                font-weight: 700;
+                margin-right: 10px;
+            }
+        }
+    }
+    .arrow__left,
+    .arrow__right {
+        display: none;
+    }
+    .banner__step {
+        display: none;
+    }
+    .banner__description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:740px) and (max-width: 1023px) {
+    .banner {
+        padding: 50px 45px;
+        padding-right: 70px;
+    }
+    .banner__title {
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        span {
+            font-size: 75px;
+            &:first-child {
+                font-weight: 700;
+                margin-right: 15px;
+            }
+        }
+    }
+    .arrow__left,
+    .arrow__right {
+        display: none;
+    }
+    .banner__step {
+        display: none;
+    }
+    .banner__description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1023px) and (max-width: 1400px) {
+    .banner__content {
+        padding-right: 135px;
+    }
+}

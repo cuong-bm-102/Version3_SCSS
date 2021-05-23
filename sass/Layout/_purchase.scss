@@ -1,0 +1,143 @@
+// CSS PURCHASE
+.purchase {
+    padding: 55px 0;
+    background-color: $color-green-5;
+    .purchase__content {
+        align-items: center;
+        color: $color-black-1;
+        i {
+            font-size: 96px;
+            margin-right: 20px;
+        }
+        p {
+            font-size: 42px;
+            letter-spacing: 3.5px;
+            word-spacing: 2px;
+        }
+        button {
+            margin-left: auto;
+            width: 230px;
+            height: 45px;
+            font-size: 19px;
+            font-weight: bold;
+            border: 3px solid $color-black-1;
+            background-color: transparent;
+            cursor: pointer;
+            &:hover {
+                color: $color-green-0;
+                border-color: $color-green-0;
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+@media only screen and (max-width:576px) {
+    .purchase {
+        padding: 30px 0;
+        .purchase__content {
+            justify-content: center;
+            i {
+                font-size: 35px;
+                margin-right: 5px;
+            }
+            p {
+                font-size: 18px;
+                letter-spacing: 1.5px;
+                word-spacing: 1.5px;
+                margin-bottom: 7px;
+            }
+            button {
+                margin-left: 0;
+                width: 165px;
+                height: 31px;
+                font-size: 14px;
+                border: 2px solid $color-black-1;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:740px) {
+    .purchase {
+        padding: 35px 0;
+        .purchase__content {
+            justify-content: center;
+            i {
+                font-size: 45px;
+                margin-right: 10px;
+            }
+            p {
+                font-size: 28px;
+                letter-spacing: 2.5px;
+                word-spacing: 1.5px;
+                margin-bottom: 10px;
+            }
+            button {
+                margin-left: 0;
+                width: 177px;
+                height: 38px;
+                font-size: 15px;
+                font-weight: bold;
+                border: 2px solid $color-black-1;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:740px) and (max-width: 1023px) {
+    .purchase {
+        padding: 45px 0;
+        .purchase__content {
+            justify-content: center;
+            i {
+                font-size: 55px;
+                margin-right: 10px;
+            }
+            p {
+                font-size: 28px;
+                letter-spacing: 2.5px;
+                word-spacing: 1.5px;
+                margin-bottom: 15px;
+            }
+            button {
+                margin-left: 0;
+                width: 177px;
+                height: 38px;
+                font-size: 15px;
+                font-weight: bold;
+                border: 2px solid $color-black-1;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1023px) and (max-width: 1239px) {
+    .purchase {
+        padding: 55px 0;
+        .purchase__content {
+            i {
+                font-size: 75px;
+                margin-right: 15px;
+            }
+            p {
+                font-size: 40px;
+                letter-spacing: 2.5px;
+                word-spacing: 1.5px;
+            }
+            button {
+                margin-left: auto;
+                width: 200px;
+                height: 45px;
+                font-size: 18px;
+                border: 3px solid $color-black-1;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}
